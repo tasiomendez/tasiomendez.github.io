@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 
 RUN chmod -R 777 ./
 RUN gem install bundler
-# RUN bundle install
+RUN bundle install
 
 ENV PORT 4000
 EXPOSE $PORT
