@@ -1,0 +1,22 @@
+{% assign assets_url = "/assets/" | relative_url %}
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='{{ assets_url }}']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  {% if page.cover %}{% include_cached sidebar.html cover=page.cover theme_color=page.theme_color image=image color=color %}{% endif %}
+  {% include_cached menu.html %}
+
+  <main id="_main" class="content layout-{{ page.layout }}" role="main">
+    {{ content }}
+    {% include_cached footer.html %}
+  </main>
+
+  {% unless page.cover %}{% include_cached sidebar.html cover=page.cover theme_color=page.theme_color image=image color=color %}{% endunless %}
+</hy-push-state>
+
+{% include_cached templates/index.html %}
