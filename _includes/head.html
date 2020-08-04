@@ -29,10 +29,12 @@
   {% feed_meta %}
 {% endif %}
 
-<link rel="shortcut icon"    href="{{ '/assets/icons/favicon.ico'      | relative_url }}">
-<link rel="apple-touch-icon" href="{{ '/assets/icons/icon-192x192.png' | relative_url }}">
+<link rel="apple-touch-icon" sizes="192x192"     href="{{ '/dist/icons/favicon-192x192.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32"  href="{{ '/dist/icons/favicon-32x32.png'   | relative_url }}">
+<link rel="icon" type="image/png" sizes="96x96"  href="{{ '/dist/icons/favicon-96x96.png'   | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16"  href="{{ '/dist/icons/favicon-16x16.png'   | relative_url }}">
 
-<link rel="preload" href="{{ '/assets/img/swipe.svg' | relative_url }}" as="image" id="_hrefSwipeSVG">
+<link rel="preload" href="{{ '/dist/img/swipe.svg' | relative_url }}" as="image" id="_hrefSwipeSVG">
 
 <link rel="stylesheet" href="/dist/css/hydejack.min.css">
 <link rel="stylesheet" href="/dist/css/custom.css">
