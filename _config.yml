@@ -19,15 +19,23 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Tasio Mendez
+subtitle: Telecom Engineer
 
 author: Tasio Mendez
 
 email: tm.tasio@gmail.com
 
+# Description for metadata. This will appear on Google Results
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi! · I'm Tasio Mendez - Telecom engineer with a passion for new technologies,
+  interested in big data, machine learning and data science.
+
+# On top menu description
+tagline: >-
+  Telecom engineer with a passion for new technologies,
+  interested in big data, machine learning and data science.
+  
+location: Milano, Italy
 
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.

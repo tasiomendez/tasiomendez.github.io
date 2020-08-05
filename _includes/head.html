@@ -1,6 +1,6 @@
 {% capture title %}
   {% if page.url == "/" %}
-    {{ site.title }}{% if site.tagline %} {{ strings.separator | default:"|" }} {{ site.tagline }}{% endif %}
+    {{ site.title }}{% if site.subtitle %} {{ strings.separator | default:"|" }} {{ site.subtitle }}{% endif %}
   {% elsif page.title.size > 0 %}
     {{ page.title }} {{ strings.separator | default:"|" }} {{ site.title }}
   {% else %}
