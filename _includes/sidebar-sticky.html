@@ -12,9 +12,15 @@
         {{ text | markdownify | replace:'<p>','' | replace:'</p>','' }}
       </p>
     {% endif %}
+    {% if site.from %}
+      <p style="margin-bottom: 3px;">
+        <span class="location icon icon-home3"></span>
+        {{ site.from }}
+      </p>
+    {% endif %}
     {% if site.location %}
       <p>
-        <span class="location icon-location"></span>
+        <span class="location icon icon-location"></span>
         {{ site.location }}
       </p>
     {% endif %}
