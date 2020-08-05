@@ -1,18 +1,46 @@
 ---
-layout: home
+layout: about
 title: About
+header:
+  title: About Me
 cover: false
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hey! I'm Tasio Mendez, a **Telecom Engineer** specialized in **Big Data and Data Science**.
+I started my studies at the Universidad Politécnica de Madrid where I studied the Bachelor of Engineering in Telecommunication Technologies and Services.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Later I started my master studies in Madrid and finished them in Milan where I specialized in computer science, more specifically in Big Data and Data Science.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I have some experience working in European research projects related to Agent-based Social Simulation, Machine Learning and Emotion Analysis,
+as well as presenting results at international conferences.
 
+Currently, I am finishing my Master's studies at the **Politecnico di Milano** with expectations of working abroad in fields related to my studies:
+big data, cloud computing, devops, machine learning and artificial intelligence...
 
-[jekyll-organization]: https://github.com/jekyll
+<hr class="dingbat related"/>
+<div class="d-flex menu-cards">
+  <article class="project-card">
+    <a href="/cv/" class="no-hover no-print-link flip-project" tabindex="-1">
+      <div class="project-card-img aspect-ratio sixteen-nine flip-project-img"> <img src="/dist/img/cv.jpg" alt="Async Constructor Pattern in JavaScript" loading="lazy" style="opacity: 0;" width="864" height="486"></div>
+    </a>
+    <h3 class="project-card-title flip-project-title"> <a href="/cv/" class="flip-title">Résumé</a></h3>
+    <p class="project-card-text fine" property="disambiguatingDescription">
+      On my career as a student I've taken every opportunity on my way.
+      <a class="fill-card no-hover" href="/cv/" tabindex="-1">
+        <span class="sr-only">Continue reading Résumé </span>
+      </a>
+    </p>
+  </article>
+  <article class="project-card">
+    <a href="/projects/" class="no-hover no-print-link flip-project" tabindex="-1">
+      <div class="project-card-img aspect-ratio sixteen-nine flip-project-img"> <img src="/dist/img/projects.jpg" alt="Async Constructor Pattern in JavaScript" loading="lazy" style="opacity: 0;" width="864" height="486"></div>
+    </a>
+    <h3 class="project-card-title flip-project-title"> <a href="/projects/" class="flip-title">Projects</a></h3>
+    <p class="project-card-text fine" property="disambiguatingDescription">
+      Different projects carried out in the professional, academic and personal fields.
+      <a class="fill-card no-hover" href="/projects/" tabindex="-1">
+        <span class="sr-only">Continue reading Projects </span>
+      </a>
+    </p>
+  </article>
+</div>
