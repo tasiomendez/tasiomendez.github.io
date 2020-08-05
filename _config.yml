@@ -27,19 +27,20 @@ email: tm.tasio@gmail.com
 
 # Description for metadata. This will appear on Google Results
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi! · I'm Tasio Mendez - Telecom engineer with a passion for new technologies,
+  Hi! · I'm Tasio Mendez - Telecom engineer with passion for new technologies,
   interested in big data, machine learning and data science.
 
 # On top menu description
 tagline: >-
-  Telecom engineer with a passion for new technologies,
+  Telecom engineer with passion for new technologies,
   interested in big data, machine learning and data science.
-  
+
 location: Milano, Italy
 
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
 logo: /dist/img/profile.jpg
+accent_image: /dist/img/sidebar.webp
 
 # the subpath of your site, e.g. /blog
 baseurl: "/"

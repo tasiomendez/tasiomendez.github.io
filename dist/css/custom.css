@@ -1,6 +1,8 @@
 
 hy-drawer .sidebar-bg {
-  background: linear-gradient(to bottom, #193747 0%, #233e4c 30%, #3c929e 50%, #d5d5d4 70%, #cdccc8 100%) !important;
+  /*background: linear-gradient(to bottom, #193747 0%, #233e4c 30%, #3c929e 50%, #d5d5d4 70%, #cdccc8 100%);*/
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 img.avatar {
@@ -18,4 +20,15 @@ body {
 
 .sidebar-sticky .location.icon-location {
   margin-right: 3px;
+}
+
+/* Only for desktop */
+@media (min-width: 992px) {
+  hy-push-state #_main {
+    padding-top: 4rem !important;
+  }
+
+  hy-push-state #_navbar {
+    display: none !important;
+  }
 }

@@ -10,7 +10,7 @@
 
 {% assign author = site.author %}
 
-{% assign image       = site.accent_image | default:'/assets/img/sidebar-bg.jpg' %}
+{% assign image       = site.accent_image | default:'/dist/img/sidebar-bg.jpg' %}
 {% assign color       = site.accent_color | default:'rgb(79,177,186)' %}
 {% assign theme_color = site.theme_color  | default:'rgb(8,46,57)' %}
 
@@ -25,6 +25,16 @@
 </head>
 
 <body class="{% include_cached utils/base-classes %}">
+
   {% include index.html %}
+
   <script src="/dist/js/hydejack.bundle.js" type="module"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+      function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+      };
+      if (isMobileDevice()) document.querySelector('#_drawer').setAttribute('opened', 'true');
+    });
+  </script>
 </body>
