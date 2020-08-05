@@ -12,6 +12,12 @@
         {{ text | markdownify | replace:'<p>','' | replace:'</p>','' }}
       </p>
     {% endif %}
+    {% if site.location %}
+      <p>
+        <span class="location icon-location"></span>
+        {{ site.location }}
+      </p>
+    {% endif %}
   </div>
 
   <nav class="sidebar-nav heading" role="navigation">
