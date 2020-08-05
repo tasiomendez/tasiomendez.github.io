@@ -18,8 +18,33 @@ body {
   overflow-y: auto !important;
 }
 
-.sidebar-sticky .location.icon-location {
+.sidebar-sticky .location.icon {
   margin-right: 3px;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: -8px;
+}
+
+.d-flex > div,
+.d-flex > article {
+  margin: 8px;
+}
+
+.menu-cards {
+  margin-top: 2vh;
+}
+
+.project-card {
+  border-radius: .5rem;
+}
+
+hy-push-state #_main {
+  padding-bottom: 2rem;
 }
 
 /* Only for desktop */
@@ -30,5 +55,13 @@ body {
 
   hy-push-state #_navbar {
     display: none !important;
+  }
+}
+
+/* Only for mobile devices */
+@media (max-width: 767.98px) {
+  .d-flex.menu-cards {
+    flex-direction: column;
+    margin: 0;
   }
 }
