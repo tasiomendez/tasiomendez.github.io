@@ -33,8 +33,8 @@ location: Milano, Italy
 
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo: /dist/img/profile.jpg
-accent_image: /dist/img/sidebar.webp
+logo: /assets/img/profile.jpg
+accent_image: /assets/img/sidebar.webp
 
 # the subpath of your site, e.g. /blog
 baseurl: "/"
@@ -42,8 +42,18 @@ baseurl: "/"
 # the base hostname & protocol for your site, e.g. http://example.com
 url: ""
 
+# Language of your content in 2-letter code, e.g.: en, de.
+# You may also provide a location, e.g.: en-us, de_AT.
+lang: en
+
 # Build settings
 theme: minima
+
+# Collections
+collections:
+  projects:
+    permalink:         /projects/:path/
+    output:            true
 
 # Add links to the sidebar.
 menu:

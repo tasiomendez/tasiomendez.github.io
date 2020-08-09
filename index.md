@@ -21,7 +21,7 @@ big data, cloud computing, devops, machine learning and artificial intelligence.
 <div class="d-flex menu-cards">
   <article class="project-card">
     <a href="/cv/" class="no-hover no-print-link flip-project" tabindex="-1">
-      <div class="project-card-img aspect-ratio sixteen-nine flip-project-img"> <img src="/dist/img/cv.jpg" alt="Async Constructor Pattern in JavaScript" loading="lazy" style="opacity: 0;" width="864" height="486"></div>
+      <div class="project-card-img aspect-ratio sixteen-nine flip-project-img"> <img src="/assets/img/cv.jpg" alt="Async Constructor Pattern in JavaScript" loading="lazy" style="opacity: 0;" width="864" height="486"></div>
     </a>
     <h3 class="project-card-title flip-project-title"> <a href="/cv/" class="flip-title">Résumé</a></h3>
     <p class="project-card-text fine" property="disambiguatingDescription">
@@ -33,7 +33,7 @@ big data, cloud computing, devops, machine learning and artificial intelligence.
   </article>
   <article class="project-card">
     <a href="/projects/" class="no-hover no-print-link flip-project" tabindex="-1">
-      <div class="project-card-img aspect-ratio sixteen-nine flip-project-img"> <img src="/dist/img/projects.jpg" alt="Async Constructor Pattern in JavaScript" loading="lazy" style="opacity: 0;" width="864" height="486"></div>
+      <div class="project-card-img aspect-ratio sixteen-nine flip-project-img"> <img src="/assets/img/projects.jpg" alt="Async Constructor Pattern in JavaScript" loading="lazy" style="opacity: 0;" width="864" height="486"></div>
     </a>
     <h3 class="project-card-title flip-project-title"> <a href="/projects/" class="flip-title">Projects</a></h3>
     <p class="project-card-text fine" property="disambiguatingDescription">
