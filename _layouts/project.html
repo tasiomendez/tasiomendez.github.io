@@ -8,12 +8,41 @@ layout: base
   <header>
     <h1 class="page-title project-title">
       {{ title }}
-      <a href="https://github.com{{ page.github }}" target="_blank">
-        <span class="icon-github"></span>
-      </a>
+      {% if page.github %}
+        <a href="https://github.com{{ page.github }}" target="_blank">
+          <span class="icon-github"></span>
+        </a>
+      {% endif %}
     </h1>
     {% include components/message.html text=page.description hide=page.hide_description %}
   </header>
+
+  <div class="tag-side-wrapper tag-show">
+    <div class="year-tag-wrapper">
+      <div class="tag year-tag">{{ page.year }}</div>
+    </div>
+    <hr>
+    <div class="category-tag-wrapper">
+      <div class="tag category-tag">{{ page.category }}</div>
+    </div>
+    <hr>
+    <div class="technologies">
+      <div class="tech-tag-wrapper">
+        {% for technology in page.technologies %}
+          <div class="tag tech-tag">{{ technology }}</div>
+        {% endfor %}
+      </div>
+    </div>
+    <hr>
+    {% if page.github %}
+    <div class="url">
+      <span class="icon-github"></span>
+      Code available at
+      <a href="https://github.com{{ page.github }}" target="_blank">Github</a>
+    </div>
+    <hr>
+    {% endif %}
+  </div>
 
   <div class="tag-wrapper hr-bottom">
     <div class="tag year-tag">{{ page.year }}</div>

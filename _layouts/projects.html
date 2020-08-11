@@ -41,6 +41,11 @@ layout: page
           <h3 class="project-card-title flip-project-title"> <a href="{{ project.url | relative_url }}" class="flip-title">{{ project.title }}</a></h3>
           <p class="project-card-text fine" property="disambiguatingDescription">
             {{ project.description }}
+            <div class="technologies">
+              {% for technology in project.technologies %}
+                <div class="tag tech-tag">{{ technology }}</div>
+              {% endfor %}
+            </div>
             <a class="fill-card no-hover flip-title" href="{{ project.url | relative_url }}" tabindex="-1">
               <span class="sr-only">{{ project.title }}</span>
             </a>
