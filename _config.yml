@@ -40,7 +40,7 @@ accent_image: /assets/img/sidebar.webp
 baseurl: "/"
 
 # the base hostname & protocol for your site, e.g. http://example.com
-url: ""
+url: "https://tasiomendez.github.io"
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
