@@ -122,6 +122,8 @@ h1.project-title a::after {
 
 .project-card .technologies {
   justify-content: center;
+  width: 90%;
+  margin: auto;
 }
 
 .project-card .technologies .tag {

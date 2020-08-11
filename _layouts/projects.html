@@ -26,7 +26,7 @@ layout: page
   })
 </script>
 
-{% assign projects = site[page.slug] | default:site.tags[page.slug] | sort: "year" %}
+{% assign projects = site[page.slug] | default:site.tags[page.slug] | sort: "year" | reverse %}
 <div class="d-flex menu-cards grid-cards">
 {% for project in projects %}
 
