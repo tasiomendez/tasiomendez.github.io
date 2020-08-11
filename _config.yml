@@ -52,7 +52,7 @@ theme: minima
 # Collections
 collections:
   projects:
-    permalink:         /projects/:path/
+    permalink:         /projects/:name/
     output:            true
 
 # Add links to the sidebar.
