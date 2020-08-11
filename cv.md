@@ -1,5 +1,7 @@
 ---
 layout: home
 title: Résumé
-cover: false
+
+description: >
+  On my career as a student I've taken every opportunity on my way.
 ---
