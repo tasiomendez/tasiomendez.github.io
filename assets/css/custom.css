@@ -39,6 +39,15 @@ body {
   margin-top: 2vh;
 }
 
+.grid-cards {
+  flex-wrap: wrap;
+}
+
+.grid-cards .project-card {
+  width: 49% !important;
+  margin: 8px 0 !important;
+}
+
 .project-card {
   border-radius: .5rem;
 }
