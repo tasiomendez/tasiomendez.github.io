@@ -4,22 +4,43 @@ layout: page
 
 {{ content }}
 
-{% assign projects = site[page.slug] | default:site.tags[page.slug] | sort: "year" %}
+{% assign categories = site[page.slug] | group_by: "category" | sort: "year" %}
+<div id="filter-projects" class="filter-show">
+  {% for category in categories %}
+    <div class="category" data-category="{{ category.name }}" role="button">{{ category.name }}</div>
+  {% endfor %}
+</div>
 
+<script>
+  $('.category').click(function () {
+    let cat = $(this).data('category');
+    // Change active class
+    $('.category').not(this).removeClass('active');
+    $(this).toggleClass('active');
+    let show = $(this).hasClass('active');
+    // Toggle cards
+    let $cards = $('.grid-cards').find(`.project-card[data-category="${cat}"]`);
+    $('.grid-cards .project-card').hide();
+    if (show) $cards.toggle();
+    else $('.grid-cards .project-card').show();
+  })
+</script>
+
+{% assign projects = site[page.slug] | default:site.tags[page.slug] | sort: "year" %}
 <div class="d-flex menu-cards grid-cards">
 {% for project in projects %}
 
         <article class="project-card" data-category="{{ project.category }}">
-          <a href="/projects/" class="no-hover no-print-link flip-project flip-title" tabindex="-1" style="font-size: 0;">Resume
+          <a href="{{ project.url | relative_url }}" class="no-hover no-print-link flip-project flip-title" tabindex="-1" style="font-size: 0;">{{ project.title }}
             <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">
               <img src="/assets/img/cv.jpg" alt="Async Constructor Pattern in JavaScript" loading="lazy" style="opacity: 0;" width="864" height="486">
             </div>
           </a>
-          <h3 class="project-card-title flip-project-title"> <a href="/projects/" class="flip-title">Résumé</a></h3>
+          <h3 class="project-card-title flip-project-title"> <a href="{{ project.url | relative_url }}" class="flip-title">{{ project.title }}</a></h3>
           <p class="project-card-text fine" property="disambiguatingDescription">
-            {{ project.category }}
-            <a class="fill-card no-hover flip-title" href="/projects/" tabindex="-1">
-              <span class="sr-only">Résumé</span>
+            {{ project.description }}
+            <a class="fill-card no-hover flip-title" href="{{ project.url | relative_url }}" tabindex="-1">
+              <span class="sr-only">{{ project.title }}</span>
             </a>
           </p>
         </article>

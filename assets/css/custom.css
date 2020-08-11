@@ -56,6 +56,90 @@ hy-push-state #_main {
   padding-bottom: 2rem;
 }
 
+@media screen and (min-width: 1664px) {
+
+  body:not(.no-toc) #filter-projects {
+    position: fixed;
+    width: calc(50% - 31rem);
+    right: 0;
+    margin: auto;
+    overflow: auto
+  }
+
+  body:not(.no-toc) #filter-projects.filter-hide {
+    opacity:0;
+    transform:translateX(-2rem)
+  }
+
+  body:not(.no-toc) #filter-projects.filter-show {
+    opacity:1;
+    transform:translateX(0);
+  }
+
+  body:not(.no-toc) #filter-projects.affix {
+    position:fixed;
+    top:1rem;
+    max-height:calc(100vh - 1rem)
+  }
+
+  #filter-projects {
+    flex-direction: column !important;
+    align-items: baseline !important;
+    padding-left: 2.5rem;
+  }
+
+  #filter-projects .category {
+    width: 75% !important;
+    margin-bottom: 1rem !important;
+    text-align: left !important;
+  }
+
+  body:not(.no-third-column) .page>header>a.no-hover+#filter-projects, {
+    position:absolute;
+    right:-25rem;
+    width:21rem;
+    bottom:0;
+    margin-bottom:0
+    overflow: hidden;
+  }
+
+}
+
+#filter-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  margin: 2rem -1rem 2rem calc(-1rem + 1px);
+  padding-bottom: .5rem;
+  transition:opacity 300ms ease, transform 300ms ease, border-color 1s ease;
+}
+
+#filter-projects .category {
+  padding: 3px 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  color: var(--body-color);
+  cursor: pointer;
+  border-bottom: 2px solid #0009;
+  overflow: hidden;
+  margin-right: .5rem;
+}
+
+#filter-projects .category:hover {
+  background: #0009;
+  border-bottom: 2px solid #000;
+  color: white !important;
+}
+
+#filter-projects .category.active {
+  background: #0009;
+  border-bottom: 2px solid #000;
+  color: white !important;
+}
+
 /* Only for desktop */
 @media (min-width: 992px) {
   hy-push-state #_main,
@@ -73,5 +157,13 @@ hy-push-state #_main {
   .d-flex.menu-cards {
     flex-direction: column;
     margin: 0;
+  }
+
+  .grid-cards .project-card {
+    width: 100% !important;
+  }
+
+  #filter-projects {
+    display: none !important;
   }
 }
