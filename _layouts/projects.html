@@ -30,10 +30,12 @@ layout: page
 <div class="d-flex menu-cards grid-cards">
 {% for project in projects %}
 
+        {% assign picture = project.picture | relative_url | default:"/assets/img/cv.jpg" %}
+
         <article class="project-card" data-category="{{ project.category }}">
           <a href="{{ project.url | relative_url }}" class="no-hover no-print-link flip-project flip-title" tabindex="-1" style="font-size: 0;">{{ project.title }}
             <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">
-              <img src="/assets/img/cv.jpg" alt="Async Constructor Pattern in JavaScript" loading="lazy" style="opacity: 0;" width="864" height="486">
+              <img src="{{ picture }}" alt="Async Constructor Pattern in JavaScript" loading="lazy" style="opacity: 0;" width="864" height="486">
             </div>
           </a>
           <h3 class="project-card-title flip-project-title"> <a href="{{ project.url | relative_url }}" class="flip-title">{{ project.title }}</a></h3>

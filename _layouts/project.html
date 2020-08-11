@@ -1,0 +1,29 @@
+---
+layout: base
+---
+
+{% assign title = page.header.title | default:page.title | default:strings.home | default:site.title %}
+
+<article class="page" role="article">
+  <header>
+    <h1 class="page-title project-title">
+      {{ title }}
+      <a href="https://github.com{{ page.github }}" target="_blank">
+        <span class="icon-github"></span>
+      </a>
+    </h1>
+    {% include components/message.html text=page.description hide=page.hide_description %}
+  </header>
+
+  <div class="tag-wrapper hr-bottom">
+    <div class="tag year-tag">{{ page.year }}</div>
+    <div class="technologies">
+      {% for technology in page.technologies %}
+        <div class="tag tech-tag">{{ technology }}</div>
+      {% endfor %}
+    </div>
+  </div>
+
+  {{ content }}
+
+</article>

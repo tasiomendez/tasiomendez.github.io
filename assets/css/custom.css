@@ -56,6 +56,53 @@ hy-push-state #_main {
   padding-bottom: 2rem;
 }
 
+.project-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.project-title a {
+  font-size: xxx-large;
+}
+
+h1.project-title a::after {
+  display: none;
+}
+
+.tag-wrapper,
+.technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.technologies {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.tag {
+  font-size: .8rem;
+  width: min-content;
+  padding: 1px 12px;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+  margin: 2px;
+}
+
+.technologies .tech-tag {
+  background: #8fb5e2;
+}
+
+.year-tag {
+  background: #a9d18e;
+}
+
 @media screen and (min-width: 1664px) {
 
   body:not(.no-toc) #filter-projects {
