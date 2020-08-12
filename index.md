@@ -17,6 +17,8 @@ as well as presenting results at international conferences.
 Currently, I am finishing my Master's studies at the **Politecnico di Milano** with expectations of working abroad in fields related to my studies:
 big data, cloud computing, devops, machine learning and artificial intelligence...
 
+If you are interested in cooperation or would like to discuss anything, don't hesitate to [contact me](mailto:{{ site.email }}).
+
 <hr class="dingbat related"/>
 <div class="d-flex menu-cards">
   <article class="project-card">

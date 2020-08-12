@@ -18,6 +18,11 @@ body {
   overflow-y: auto !important;
 }
 
+.dingbat {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
 .sidebar-sticky .location.icon {
   margin-right: 3px;
 }
