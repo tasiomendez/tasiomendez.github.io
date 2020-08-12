@@ -35,12 +35,19 @@ layout: base
     </div>
     <hr>
     {% if page.github %}
-    <div class="url">
-      <span class="icon-github"></span>
-      Code available at
-      <a href="https://github.com{{ page.github }}" target="_blank">Github</a>
-    </div>
-    <hr>
+      <div class="url">
+        <span class="icon-github"></span>
+        Code available at
+        <a href="https://github.com{{ page.github }}" target="_blank">Github</a>
+      </div>
+      {% if page.publication %}
+        <div class="url mt-2">
+          <span class="icon-book"></span>
+          Publication available at
+          <a href="{{ page.publication.url }}" target="_blank">{{ page.publication.publisher }}</a>
+        </div>
+      {% endif %}
+      <hr>
     {% endif %}
   </div>
 
