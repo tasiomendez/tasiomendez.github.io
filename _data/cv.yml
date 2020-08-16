@@ -1,0 +1,107 @@
+# CV
+# Name and mail are taken from the author info
+# Social media links are taken from the menu
+# Home and location info are taken from the _config.yml
+
+experience:
+  - job: Research Assistant
+    place: Grupo de Sistemas Inteligentes
+    time: Nov 2016 - June 2019
+    location: Madrid, Spain
+    description: >
+    Member of the Intelligent Systems Group (GSI), acknowledged by the
+    Universidad Politécnica de Madrid, since the third bachelor course,
+    participating in research projects related to Agent-based Social Simulation,
+    Machine Learning and Emotions Analysis.
+
+education:
+  - degree: Bachelor of Engineering in Telecommunication Technologies and Services
+    major: Telematic Engineering
+    university: Universidad Politécnica de Madrid
+    time: Sept 2014 – June 2018
+    location: Campus de Moncloa (Madrid)
+
+  - degree: Master in Telecommunication Engineering
+    university: Universidad Politécnica de Madrid
+    time: Sept 2018 – June 2019
+    location: Campus de Moncloa (Madrid)
+
+  - degree: Master in Computer Science and Engineering
+    major: Big Data and Data Science
+    university: Politecnico di Milano
+    time: Sept 2019 – Ongoing
+    location: Campus Leonardo (Milano)
+
+publications:
+  - title: Analyzing Radicalism Spread Using Agent-Based Social Simulation
+    authors: Tasio Méndez, J. Fernando Sánchez-Rada, Carlos A. Iglesias & Paul Cummings
+    year: 2019
+    publisher: Engineering Multi-Agent Systems. EMAS 2018 Revised Selected Papers
+    book: Lecture Notes in Computer Science
+    url: https://doi.org/10.1007/978-3-030-25693-7_14
+
+  - title: A Model of Radicalization Growth using Agent-based Social Simulation
+    authors: Tasio Méndez, J. Fernando Sánchez-Rada, Carlos A. Iglesias & Paul Cummings
+    year: 2018
+    publisher: In Proceedings of EMAS 2018
+    place: Stockholm, Sweden
+
+ - title: Design and Implementation of a Visualization Module for Agent-based Social Simulations applied to Radicalism Spread
+   year: 2018
+   book: Final Bachelor Project
+   publisher: ETSI Telecomunicación, Universidad Politécnica de Madrid, Madrid.
+
+certifications:
+  - title: TOEFL iBT
+    description: Scored 97 (Dic 2018)
+
+  - title: UPM-CESEDEN Award
+    description: >
+    Award for the best technology, product or service developed at the UPM with
+    themes related to Defence and Security (2019).
+
+languages:
+  - name: Spanish
+    level: Native speaker
+    stars: 5
+  - name: English - C1
+    level: Advanced Speaking and Writing
+    stars: 4
+  - name: Italian
+    level: Beginner
+    stars: 1
+
+courses:
+  - name: Efficient Team Management Course (2018)
+    description: Everis, 90 hours
+  - name: English Courses (2009 – 2013)
+    description: British Council, 500 hours
+
+strengths:
+  - skills:
+    - Hard-working
+    - Time Management
+    - Commitment
+    - Motivated
+    - Communication
+    - LaTeX
+  - skills:
+    - Web Technologies
+    - Python
+    - Java
+    - JavaScript
+    - NodeJS
+    - MongoDB
+    - Docker
+    - Spark
+    - Kafka
+    - Linux
+    - Mobile devices & Applications
+  - skills:
+    - Big Data (Spark, Kafka...)
+    - Software Engineering
+    - Machine Learning
+    - Full-stack Development
+    - General Purpose Languages
+    - Change Management (Git...)
+    - Distributed Technologies
