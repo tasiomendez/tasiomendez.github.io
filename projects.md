@@ -1,6 +1,7 @@
 ---
 layout: projects
 title: Projects
+permalink: /projects/
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
 slug: projects
 
