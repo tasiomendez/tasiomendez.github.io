@@ -4,7 +4,6 @@ title: About
 header:
   title: About Me
 cover: false
-permalink: /about/
 ---
 
 Hey! I'm Tasio Mendez, a **Telecom Engineer** specialized in **Big Data and Data Science**.
