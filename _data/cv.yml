@@ -8,11 +8,11 @@ experience:
     place: Grupo de Sistemas Inteligentes
     time: Nov 2016 - June 2019
     location: Madrid, Spain
-    description: >
-    Member of the Intelligent Systems Group (GSI), acknowledged by the
-    Universidad Politécnica de Madrid, since the third bachelor course,
-    participating in research projects related to Agent-based Social Simulation,
-    Machine Learning and Emotions Analysis.
+    description: >-
+      Member of the Intelligent Systems Group (GSI), acknowledged by the
+      Universidad Politécnica de Madrid, since the third bachelor course,
+      participating in research projects related to Agent-based Social Simulation,
+      Machine Learning and Emotions Analysis.
 
 education:
   - degree: Bachelor of Engineering in Telecommunication Technologies and Services
@@ -40,25 +40,32 @@ publications:
     book: Lecture Notes in Computer Science
     url: https://doi.org/10.1007/978-3-030-25693-7_14
 
+  - title: Engineering Multi-Agent Systems. State of Affairs and the Road Ahead
+    year: 2019
+    publisher: SIGSOFT Engineering Notes (SEN)
+    url: https://www.researchgate.net/publication/332208577_Engineering_Multi-Agent_Systems_State_of_Affairs_and_the_Road_Ahead
+
   - title: A Model of Radicalization Growth using Agent-based Social Simulation
     authors: Tasio Méndez, J. Fernando Sánchez-Rada, Carlos A. Iglesias & Paul Cummings
     year: 2018
     publisher: In Proceedings of EMAS 2018
     place: Stockholm, Sweden
+    url: https://www.researchgate.net/publication/325450594_A_Model_of_Radicalization_Growth_using_Agent-based_Social_Simulation
 
- - title: Design and Implementation of a Visualization Module for Agent-based Social Simulations applied to Radicalism Spread
-   year: 2018
-   book: Final Bachelor Project
-   publisher: ETSI Telecomunicación, Universidad Politécnica de Madrid, Madrid.
+  - title: Design and Implementation of a Visualization Module for Agent-based Social Simulations applied to Radicalism Spread
+    year: 2018
+    book: Final Bachelor Project
+    publisher: ETSI Telecomunicación, Universidad Politécnica de Madrid, Madrid.
+    url: http://oa.upm.es/51330/
 
 certifications:
   - title: TOEFL iBT
     description: Scored 97 (Dic 2018)
 
   - title: UPM-CESEDEN Award
-    description: >
-    Award for the best technology, product or service developed at the UPM with
-    themes related to Defence and Security (2019).
+    description: >-
+      Award for the best technology, product or service developed at the UPM with
+      themes related to Defence and Security (2019).
 
 languages:
   - name: Spanish
@@ -93,7 +100,7 @@ strengths:
     - NodeJS
     - MongoDB
     - Docker
-    - Spark
+    - Apache Spark
     - Kafka
     - Linux
     - Mobile devices & Applications
