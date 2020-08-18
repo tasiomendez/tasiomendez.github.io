@@ -1,0 +1,76 @@
+---
+layout: base
+---
+
+{% assign author = site.data.author %}
+{% assign cv     = site.data.cv     %}
+<article class="page" role="article">
+  <header>
+    <h1 class="page-title">{{ author.fullname | default:author.name | default:site.author | default:"Name" }}</h1>
+    <p class="h3 faded subline title p-job-title">{{ cv.title }}</p>
+    <div class="hr pb0"></div>
+  </header>
+
+  <p class="note p-note">{{ cv.summary }}</p>
+
+  <div class="columns contact columns-break">
+    <dl class="column column-3-5">
+      <dt class="faded"><span class="mail icon icon-mail"></span></dt>
+      <dd class="bold adr p-adr h-adr">
+        <a href="mailto:{{ author.email }}" class="external no-print-link url u-url">{{ author.email }}</a>
+      </dd>
+      <dt class="faded"><span class="home icon icon-home3"></span></dt>
+      <dd class="bold adr p-adr h-adr">{{ author.from }}</dd>
+      <dt class="faded"><span class="location icon icon-location"></span></dt>
+      <dd class="bold adr p-adr h-adr">{{ author.location }}</dd>
+    </dl>
+    <dl class="column column-2-5">
+      <dt class="faded"><span class="linkedin icon icon-linkedin2"></span></dt>
+      <dd class="bold adr p-adr h-adr">
+        <a href="https://linkedin.com/in/{{ author.social.linkedin }}" class="external no-print-link url u-url" target="_blank">{{ site.author }}</a>
+      </dd>
+      <dt class="faded"><span class="github icon icon-github"></span></dt>
+      <dd class="bold adr p-adr h-adr">
+        <a href="https://github.com/{{ author.social.github }}" class="external no-print-link url u-url" target="_blank">github.com/{{ author.social.github }}</a>
+      </dd>
+    </dl>
+  </div>
+
+  <div class="columns contact columns-break">
+    <div class="column column-3-5">
+      {% include cv/experience.html %}
+      {% include cv/education.html %}
+    </div>
+    <div class="column column-2-5">
+    </div>
+  </div>
+
+  {{ content }}
+
+  <hr class="dingbat related"/>
+
+  {% if site.posts.size > 0 %}
+    <h2 class="hr-bottom">{{ strings.posts | default:"Posts" }}</h2>
+    <ul class="related-posts">
+      {% for post in site.posts limit:5 %}
+        {% include_cached components/post-list-item.html post=post %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% assign pages = site.html_pages | where:"layout","page" | where_exp:"page","page.sitemap != false" %}
+  {% if pages.size > 0 %}
+    <h2 class="hr-bottom">{{ strings.pages | default:"Pages" }}</h2>
+    <ul class="related-posts">
+      {% for page in pages limit:5 %}
+        {% if page.layout == 'page' %}
+          <li class="h4">
+            <a href="{{ page.url | relative_url }}" class="flip-title">
+              <span>{{ page.title }}</span>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</article>

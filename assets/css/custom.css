@@ -286,6 +286,62 @@ h1.project-title a::after {
   color: white !important;
 }
 
+.layout-resume .subline.h3 {
+  margin-top: 0;
+}
+
+.layout-resume .h3 {
+  margin-top: 1rem;
+}
+
+.layout-resume .h4 {
+  margin-bottom: 0;
+}
+
+.layout-resume .h4 .light {
+  font-weight: normal;
+}
+
+.layout-resume .work-location {
+  color: var(--gray);
+  font-style: italic;
+}
+
+/* Style: https://codepen.io/NielsVoogt/pen/MbMMxv/ */
+.timeline-item {
+  padding: 2em 1em 1em;
+  position: relative;
+  color: rgba(0,0,0, .7);
+  border-left: 2px solid var(--body-color);
+}
+
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 1em;
+  top: .5em;
+  display: block;
+  color: var(--gray);
+  font-weight: 700;
+}
+
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -6px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid var(--body-color);
+  background: white;
+}
+
+.timeline-item:last-child {
+  border-image: linear-gradient( to bottom, var(--body-color) 80%, rgba(0,0,0, 0)) 1%;
+}
+
 /* Only for desktop */
 @media (min-width: 992px) {
   hy-push-state #_main,

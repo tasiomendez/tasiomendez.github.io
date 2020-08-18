@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: resume
 title: Résumé
 permalink: /cv/
 

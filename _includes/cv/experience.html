@@ -1,0 +1,34 @@
+
+{% assign author  = site.data.author  %}
+{% assign cv      = site.data.cv      %}
+{% assign strings = site.data.strings %}
+
+<section>
+  <div class="npb">
+    <h2 id="experience" class="h3 hr-bottom"> {{ strings.resume.work }}
+      <span class="symbol icon-briefcase"></span>
+    </h2>
+    <section>
+      
+      {% for work in cv.experience reversed %}
+        <div class="timeline-item" date-is='{{ work.time }}'>
+          <h3 class="h4 faded">
+            <span class="bc">{{ work.job }}</span> at
+            <span class="bc">
+              {% if work.url %}
+                <a class="org p-org h-card" href="{{ work.url }}">{{ work.at }}</a>
+              {% else %}
+                {{ work.at }}
+              {% endif %}
+              </span>
+          </h3>
+          <div class="work-location">{{ work.location }}</div>
+          <p class="note">
+            {{ work.description }}
+          </p>
+        </div>
+      {% endfor %}
+
+    </section>
+  </div>
+</section>

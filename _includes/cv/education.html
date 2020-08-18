@@ -1,0 +1,26 @@
+
+{% assign author  = site.data.author  %}
+{% assign cv      = site.data.cv      %}
+{% assign strings = site.data.strings %}
+
+<section>
+  <div class="npb">
+    <h2 id="education" class="h3 hr-bottom"> {{ strings.resume.education }}
+      <span class="symbol icon-briefcase"></span>
+    </h2>
+    <section>
+
+      {% for degree in cv.education reversed %}
+        <div class="timeline-item" date-is='{{ degree.time }}'>
+          <h3 class="h4">
+            {{ degree.degree }},
+            <span class="faded light">{{ degree.major }}</span>
+          </h3>
+          <h3 class="h4 faded">{{ degree.university }}</h3>
+          <div class="work-location">{{ degree.location }}</div>
+        </div>
+      {% endfor %}
+
+    </section>
+  </div>
+</section>
