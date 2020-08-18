@@ -3,9 +3,19 @@
 # Social media links are taken from the menu
 # Home and location info are taken from the _config.yml
 
+title: Telecom Engineer
+summary: >-
+   I am a student of a MSc Computer Science at the Politecnico di Milano. As
+   a student I have a good academic record, which shows my commitment and
+   determination to my work. I have been working at the Intelligent Systems
+   Group since the third bachelor course. This experience has allowed me
+   over the last years to broaden my knowledge in several areas of
+   Telematic Engineering.
+
 experience:
   - job: Research Assistant
-    place: Grupo de Sistemas Inteligentes
+    at: Grupo de Sistemas Inteligentes
+    url: https://www.gsi.upm.es/
     time: Nov 2016 - June 2019
     location: Madrid, Spain
     description: >-
