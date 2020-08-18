@@ -28,9 +28,6 @@ tagline: >-
   Telecom engineer with passion for new technologies,
   interested in big data, machine learning and cloud computing.
 
-from: Madrid, Spain
-location: Milano, Italy
-
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
 logo: /assets/img/profile.jpg

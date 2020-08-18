@@ -12,16 +12,16 @@
         {{ text | markdownify | replace:'<p>','' | replace:'</p>','' }}
       </p>
     {% endif %}
-    {% if site.from %}
+    {% if site.data.author.from %}
       <p style="margin-bottom: 3px;">
         <span class="location icon icon-home3"></span>
-        {{ site.from }}
+        {{ site.data.author.from }}
       </p>
     {% endif %}
-    {% if site.location %}
+    {% if site.data.author.location %}
       <p>
         <span class="location icon icon-location"></span>
-        {{ site.location }}
+        {{ site.data.author.location }}
       </p>
     {% endif %}
   </div>
