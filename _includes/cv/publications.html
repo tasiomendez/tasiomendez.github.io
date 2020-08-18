@@ -1,0 +1,42 @@
+
+{% assign author  = site.data.author  %}
+{% assign cv      = site.data.cv      %}
+{% assign strings = site.data.strings %}
+
+<section>
+  <div class="npb">
+    <h2 id="publications" class="h3 hr-bottom"> {{ strings.resume.publications }}
+      <span class="symbol icon-book"></span>
+    </h2>
+    <section>
+
+      {% for publication in cv.publications reversed %}
+        <div class="publication-item">
+          <div class="bc">
+            {% if publication.url %}
+              {{ publication.authors }} ({{ publication.year }}).
+              <a class="org p-org h-card" href="{{ publication.url }}">
+                <em>{{ publication.title }}</em>
+              </a>
+            {% else %}
+              {{ publication.authors }} ({{ publication.year }}).
+              <em>{{ publication.title }}</em>
+            {% endif %}
+          </div>
+          <div class="faded extra">
+            {% if publication.book %}
+              {{ publication.book }}.
+            {% endif %}
+            {% if publication.publisher %}
+              {{ publication.publisher }}.
+            {% endif %}
+            {% if publication.place %}
+              {{ publication.place }}.
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+
+    </section>
+  </div>
+</section>
