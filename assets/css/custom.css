@@ -245,7 +245,7 @@ h1.project-title a::after {
     right:-25rem;
     width:21rem;
     bottom:0;
-    margin-bottom:0
+    margin-bottom:0;
     overflow: hidden;
   }
 
@@ -319,6 +319,22 @@ h1.project-title a::after {
 
 .layout-resume .publication-item a.h-card {
   text-decoration-color: var(--menu-text);
+}
+
+.layout-resume .lang .lang-name,
+.layout-resume .lang .stars,
+.layout-resume .lang .extra {
+  margin: 0;
+}
+
+.layout-resume .lang .extra {
+  font-size: .9rem;
+  font-style: italic;
+}
+
+.layout-resume .lang .stars .symbol {
+  margin-top: 0;
+  color: var(--body-color);
 }
 
 /* Style: https://codepen.io/NielsVoogt/pen/MbMMxv/ */

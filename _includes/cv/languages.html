@@ -9,7 +9,26 @@
       <span class="symbol icon-bubbles"></span>
     </h2>
     <section>
-
+      
+      {% for lang in cv.languages %}
+        <div class="lang">
+          <div class="bc d-flex lang-name">
+            {{ lang.name }}
+            <div class="stars d-flex">
+              {% for i in (1..5) %}
+                {% if i <= lang.stars %}
+                  <span class="symbol icon-star-full"></span>
+                {% else %}
+                  <span class="symbol icon-star-empty"></span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          <div class="faded extra">
+            {{ lang.level }}
+          </div>
+        </div>
+      {% endfor %}
 
     </section>
   </div>
