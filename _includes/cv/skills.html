@@ -10,7 +10,27 @@
     </h2>
     <section>
 
-
+      {% for skill in cv.skills %}
+        <div class="skill">
+          <div class="bc d-flex skill-name">
+            {{ skill.name }}
+            <div class="stars d-flex">
+              {% for i in (1..5) %}
+                {% if i <= skill.level %}
+                  <span class="symbol icon-star-full"></span>
+                {% else %}
+                  <span class="symbol icon-star-empty"></span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          <div class="faded extra">
+            {% for tag in skill.tags %}
+             <span class="tag-item">{{ tag }}</span>
+            {% endfor %}      
+          </div>
+        </div>
+      {% endfor %}
 
     </section>
   </div>

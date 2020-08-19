@@ -350,6 +350,44 @@ h1.project-title a::after {
   margin: 0;
 }
 
+.layout-resume .skill {
+  border-bottom: 1px dashed var(--gray);
+  padding-bottom: .75rem;
+  margin-bottom: 1rem;
+}
+
+.layout-resume .skill .skill-name,
+.layout-resume .skill .stars,
+.layout-resume .skill .extra {
+  margin: 0;
+}
+
+.layout-resume .skill .skill-name {
+  margin: 0;
+}
+
+.layout-resume .skill .extra {
+  width: calc(100% - 100px);
+}
+
+.layout-resume .skill .stars .symbol {
+  margin-top: 0;
+  margin-left: 3px;
+  color: var(--body-color);
+}
+
+.layout-resume .skill .tag-item {
+  margin-right: 7px;
+  border: 1px solid var(--menu-text);
+  font-size: .85rem;
+  padding: 0.15rem 0.45rem;
+  display: inline-block;
+  margin-bottom: 5px;
+  background: #eeeeee6b;
+  line-height: 1rem;
+  width: max-content;
+}
+
 /* Style: https://codepen.io/NielsVoogt/pen/MbMMxv/ */
 .timeline-item {
   padding: 2.5em 1em 1em;
