@@ -91,37 +91,58 @@ languages:
     level: Beginner
     stars: 1
 
-courses:
-  - name: Efficient Team Management Course (2018)
-    description: Everis, 90 hours
-  - name: English Courses (2009 – 2013)
-    description: British Council, 500 hours
+skills:
+  - name: General Purpose Languages
+    level: 5
+    tags:
+    - Python
+    - Java
+    - JavaScript
+    - PHP
+    - C/C++
+    - NodeJS
+    - HTML5 & CSS/Sass
 
-strengths:
-  - skills:
+  - name: Big Data
+    level: 3
+    tags:
+    - Apache Spark
+    - Kafka
+    - Hadoop
+
+  - name: Cloud Computing
+    level: 3
+    tags:
+    - GCloud
+    - AWS
+    - Docker
+    - k8s
+    - CI/CD
+
+  - name: Machine Learning
+    level: 4
+    tags: 
+    - Sklearn
+    - Data Visualization
+    - Data Mining
+    - Statistics
+
+  - name: Industry Knowledge
+    level: 5
+    tags:
+    - Scrum
+    - Linux
+    - Mobile devices & Applications
+    - Software Engineering
+    - Change Management (Git...)
+    - Database Design (SQL, MongoDB...)
+
+  - name: Interpersonal Skills
+    level: 5
+    tags:
     - Hard-working
     - Time Management
     - Commitment
     - Motivated
     - Communication
-    - LaTeX
-  - skills:
-    - Web Technologies
-    - Python
-    - Java
-    - JavaScript
-    - NodeJS
-    - MongoDB
-    - Docker
-    - Apache Spark
-    - Kafka
-    - Linux
-    - Mobile devices & Applications
-  - skills:
-    - Big Data (Spark, Kafka...)
-    - Software Engineering
-    - Machine Learning
-    - Full-stack Development
-    - General Purpose Languages
-    - Change Management (Git...)
-    - Distributed Technologies
+    - Problem Solving
