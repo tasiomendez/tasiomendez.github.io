@@ -10,7 +10,16 @@
     </h2>
     <section>
 
-
+      {% for cert in cv.certifications reversed %}
+        <div class="cert-item">
+          <div class="h6 bc">
+            {{ cert.title }}
+          </div>
+          <div class="faded extra">
+            {{ cert.description }}
+          </div>
+        </div>
+      {% endfor %}
 
     </section>
   </div>

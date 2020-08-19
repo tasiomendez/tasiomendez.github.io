@@ -337,6 +337,18 @@ h1.project-title a::after {
   color: var(--body-color);
 }
 
+.layout-resume .cert-item {
+  margin-bottom: 1rem;
+}
+
+.layout-resume .cert-item .extra {
+  font-size: .9rem;
+}
+
+.layout-resume .cert-item .h6 {
+  margin: 0;
+}
+
 /* Style: https://codepen.io/NielsVoogt/pen/MbMMxv/ */
 .timeline-item {
   padding: 2.5em 1em 1em;
