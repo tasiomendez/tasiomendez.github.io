@@ -22,13 +22,13 @@ If you are interested in cooperation or would like to discuss anything, don't he
 <hr class="dingbat related"/>
 <div class="d-flex menu-cards">
   <article class="project-card">
-    <a href="/cv/" class="no-hover no-print-link flip-project flip-title" tabindex="-1" style="font-size: 0;">Résumé
+    <a href="/cv/" class="no-hover no-print-link flip-project" tabindex="-1" style="font-size: 0;">Résumé
       <div class="project-card-img aspect-ratio sixteen-nine"> <img src="/assets/img/cv.jpg" alt="Async Constructor Pattern in JavaScript" loading="lazy" style="opacity: 0;" width="864" height="486"></div>
     </a>
-    <h3 class="project-card-title flip-project-title"> <a href="/cv/" class="flip-title">Résumé</a></h3>
+    <h3 class="project-card-title flip-project-title"> <a href="/cv/" class="">Résumé</a></h3>
     <p class="project-card-text fine" property="disambiguatingDescription">
       On my career as a student I've taken every opportunity on my way.
-      <a class="fill-card no-hover flip-title" href="/cv/" tabindex="-1">
+      <a class="fill-card no-hover" href="/cv/" tabindex="-1">
         <span class="sr-only">Résumé</span>
       </a>
     </p>
