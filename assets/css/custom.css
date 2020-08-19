@@ -291,7 +291,7 @@ h1.project-title a::after {
 }
 
 .layout-resume .h3 {
-  margin-top: 1rem;
+  margin-top: 2.1rem;
 }
 
 .layout-resume .h4 {
@@ -334,6 +334,7 @@ h1.project-title a::after {
 
 .layout-resume .lang .stars .symbol {
   margin-top: 0;
+  margin-left: 3px;
   color: var(--body-color);
 }
 
