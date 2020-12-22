@@ -34,7 +34,7 @@ education:
   - degree: Master in Telecommunication Engineering
     major: Telecommunication Engineering
     university: Universidad Politécnica de Madrid
-    time: Sept 2018 – June 2019
+    time: Sept 2018 – Ongoing
     location: Campus de Moncloa (Madrid)
 
   - degree: Master in Computer Science and Engineering
@@ -88,8 +88,8 @@ languages:
     level: Advanced Speaking and Writing
     stars: 4
   - name: Italian
-    level: Beginner
-    stars: 1
+    level: Intermediate
+    stars: 3
 
 skills:
   - name: General Purpose Languages
@@ -121,7 +121,7 @@ skills:
 
   - name: Machine Learning
     level: 4
-    tags: 
+    tags:
     - Sklearn
     - Data Visualization
     - Data Mining

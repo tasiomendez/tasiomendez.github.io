@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Average score calculator
+title: Chrome & Firefox Addon
 category: Personal
 description: A calculator for computing your average score
 picture: /assets/img/mean-upm.jpg
