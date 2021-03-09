@@ -118,6 +118,8 @@ skills:
     - Docker
     - k8s
     - CI/CD
+    - Terraform
+    - TOSCA
 
   - name: Machine Learning
     level: 4
