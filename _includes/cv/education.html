@@ -18,6 +18,13 @@
           </h3>
           <h3 class="h4 faded">{{ degree.university }}</h3>
           <div class="work-location">{{ degree.location }}</div>
+
+          {% if degree.description %}
+            <p class="note">
+              {{ degree.description }}
+            </p>
+          {% endif %}
+
         </div>
       {% endfor %}
 

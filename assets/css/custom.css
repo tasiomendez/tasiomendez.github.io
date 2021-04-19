@@ -423,6 +423,36 @@ h1.project-title a::after {
   border-image: linear-gradient( to bottom, var(--body-color) 80%, rgba(0,0,0, 0)) 1%;
 }
 
+.timeline-item .sub-item {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-left: none;
+  margin-top: 1em;
+}
+
+.timeline-item .sub-item ~ .sub-item {
+  margin-top: 0;
+}
+
+.timeline-item .sub-item .note {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.timeline-item .sub-item .date,
+.timeline-item .sub-item .work-location {
+  color: var(--gray);
+  font-style: italic;
+}
+
+.timeline-item .sub-item::after {
+  border-radius: 0;
+  height: 4px;
+  width: 10px;
+  background: var(--body-color);
+  margin-top: 0.15em;
+}
+
 /* Only for desktop */
 @media (min-width: 992px) {
   hy-push-state #_main,

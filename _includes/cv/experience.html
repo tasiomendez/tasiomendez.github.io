@@ -9,11 +9,15 @@
       <span class="symbol icon-briefcase"></span>
     </h2>
     <section>
-      
+
       {% for work in cv.experience reversed %}
         <div class="timeline-item" date-is='{{ work.time }}'>
+
           <h3 class="h4 faded">
-            <span class="bc">{{ work.job }}</span> at
+            {% if work.job %}
+              <span class="bc">{{ work.job }}</span> at
+            {% endif %}
+
             <span class="bc">
               {% if work.url %}
                 <a class="org p-org h-card" href="{{ work.url }}">{{ work.at }}</a>
@@ -22,10 +26,34 @@
               {% endif %}
               </span>
           </h3>
+
           <div class="work-location">{{ work.location }}</div>
-          <p class="note">
-            {{ work.description }}
-          </p>
+
+          {% if work.description %}
+            <p class="note">
+              {{ work.description }}
+            </p>
+          {% endif %}
+
+          {% for position in work.positions %}
+            <div class="sub-item">
+              <h3 class="h4 faded">
+                <span class="bc">{{ position.job }}</span>
+              </h3>
+              <div class="date">
+                <span class="work-location">{{ position.location }}</span>
+                ·
+                <span class="">{{ position.time }}</span>
+              </div>
+
+              {% if position.description %}
+                <p class="note">
+                  {{ position.description }}
+                </p>
+              {% endif %}
+            </div>
+          {% endfor %}
+
         </div>
       {% endfor %}
 
