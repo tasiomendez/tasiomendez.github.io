@@ -5,43 +5,62 @@
 
 title: Telecom Engineer
 summary: >-
-   I am a student of a MSc Computer Science at the Politecnico di Milano. As
-   a student I have a good academic record, which shows my commitment and
-   determination to my work. I have been working at the Intelligent Systems
-   Group since the third bachelor course. This experience has allowed me
-   over the last years to broaden my knowledge in several areas of
-   Telematic Engineering.
+    I am a double degree student in MSc Computer Science major in Big Data and Cloud Computing
+    at Politecnico di Milano and MSc Telecommunications Engineering at Universidad Politécnica
+    de Madrid. I am currently finishing my studies focusing my MSc Thesis on DevOps techniques
+    using tools such as Terraform, Ansible and Cloudify.
 
 experience:
-  - job: Research Assistant
+  - promotion: true
     at: Grupo de Sistemas Inteligentes
     url: https://www.gsi.upm.es/
-    time: Nov 2016 - June 2019
-    location: Madrid, Spain
-    description: >-
-      Member of the Intelligent Systems Group (GSI), acknowledged by the
-      Universidad Politécnica de Madrid, since the third bachelor course,
-      participating in research projects related to Agent-based Social Simulation,
-      Machine Learning and Emotions Analysis.
+    time: November 2016 - June 2019
+    positions:
+      - job: Research Assistant
+        time: September 2018 - June 2019
+        location: Madrid, Spain
+        description: >-
+          Participation in European research projects related to Agent-based Social Simulation,
+          Machine Learning and Emotions Analysis. Administration of internal servers and website.
+      - job: Research Internship
+        time: November 2016 - September 2018
+        location: Madrid, Spain
+        description: >-
+          Member of the Intelligent Systems Group (GSI), acknowledged by the
+          Universidad Politécnica de Madrid, since the third bachelor course,
+          participating in different research projects while working on the
+          final bachelor project.
 
 education:
-  - degree: Bachelor of Engineering in Telecommunication Technologies and Services
+  - degree: Bachelor of Engineering in Telecommunication Technologies and Services Engineering
     major: Telematic Engineering
     university: Universidad Politécnica de Madrid
-    time: Sept 2014 – June 2018
+    time: September 2014 – June 2018
     location: Campus de Moncloa (Madrid)
+    description: >-
+      Internet Computing; Computer Networks; Web Engineering; Data and Service
+      Provisioning Centers; Telematic Systems and Service Engineering; Client-side
+      Web Technologies; Security in Telecommunications Network and Systems
 
   - degree: Master in Telecommunication Engineering
     major: Telecommunication Engineering
     university: Universidad Politécnica de Madrid
-    time: Sept 2018 – Ongoing
+    time: September 2018 – Ongoing
     location: Campus de Moncloa (Madrid)
+    description: >-
+      Radio Access Technologies; Application and Services; Project Management;
+      Strategic Vision of Technologies and Systems Integration in ICT Sector
 
   - degree: Master in Computer Science and Engineering
     major: Big Data and Cloud Computing
     university: Politecnico di Milano
-    time: Sept 2019 – Ongoing
+    time: September 2019 – Ongoing
     location: Campus Leonardo (Milano)
+    description: >-
+      Middleware Technologies for Distributed Systems; Model Identification and Data Analysis;
+      Unstructured and Streaming Data Engineering; Data Management for the Web;
+      Technologies for Information Systems; Data Mining and Text Mining; Machine Learning
+
 
 publications:
 
